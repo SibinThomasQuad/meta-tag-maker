@@ -6,7 +6,7 @@ with open("tags.csv", "r", newline="") as file:
             meta_dic            = '<meta name="description" content="'+row[3]+'">'
             title               = '<title>'+row[2]+'</title>'
             page_url            = row[1]
-            file_name           = page_url.replace("https://www.infocomstudios.com/", "")
+            file_name           = page_url.replace("https://www.xyz.com/", "")
             path_to_file        = file_name
             path                = Path(path_to_file)
             if path.is_file()   : 
